@@ -5,11 +5,11 @@ Link: http://zguide.zeromq.org/page:all#Getting-the-Message-Out
 * Download: zhelpers.h from: https://github.com/imatix/zguide/blob/master/examples/C/zhelpers.h
 * Build server.c: 
 ```
-gcc server.c -lzmq -o server.out
+gcc server.c -lzmq -o server.out -I ..
 ```
 * Build client.c: 
 ```
-gcc client.c -lzmq -o client.out
+gcc client.c -lzmq -o client.out -I ..
 ```
 * Run client.out:
 ```
