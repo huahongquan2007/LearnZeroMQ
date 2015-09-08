@@ -38,6 +38,7 @@ int main (void)
             }
         }
     }
+    zmq_close (receiver);
     zmq_close (subscriber);
     zmq_ctx_destroy (context);
     return 0;
