@@ -29,9 +29,11 @@ gcc syncsub.c -o syncsub.out -lzmq -I ..
 ```
 ./syncsub.out
 ```
-* Result:
+* Result in publisher:
 ```
-Step 1 ready, signaling step 2
-Step 2 ready, signaling step 3
-Test successful!
+Waiting for subscribers
+Connected subscribers: 1
+Connected subscribers: 2
+Connected subscribers: 3
+Broadcasting messages
 ```
