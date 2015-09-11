@@ -8,8 +8,3 @@ cd build
 cmake ..
 make
 ```
-* Run publisher and subscriber
-```
-./publisher
-./subscriber
-```

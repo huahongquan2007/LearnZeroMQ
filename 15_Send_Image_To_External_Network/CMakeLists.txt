@@ -9,10 +9,9 @@ set(SOURCE_FILES local_computer.cpp zhelpers.hpp)
 add_executable(local_computer ${SOURCE_FILES})
 target_link_libraries(local_computer ${OpenCV_LIBS} zmq)
 
-
 set(SUB_SOURCE_FILES server.cpp zhelpers.hpp)
 add_executable(server ${SUB_SOURCE_FILES})
-target_link_libraries(server ${OpenCV_LIBS} zmq)
+target_link_libraries(server zmq)
 
 set(RECEIVER_SOURCE_FILES local_computer_receiver.cpp zhelpers.hpp)
 add_executable(local_computer_receiver ${RECEIVER_SOURCE_FILES})
